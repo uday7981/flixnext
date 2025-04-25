@@ -1,6 +1,6 @@
-# Welcome to your Expo app 👋
+# Welcome to Halvestor 📈
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Halvestor is a Shariah-compliant stocks paper trading app built with [Expo](https://expo.dev).
 
 ## Get started
 
