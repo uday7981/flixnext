@@ -15,8 +15,8 @@ export default function Index() {
         duration: 800,
         useNativeDriver: true,
       }).start(() => {
-        // Navigate to welcome screen after fade out
-        router.replace('/welcome');
+        // Navigate to onboarding screen after fade out
+        router.replace('/onboarding');
       });
     }, 2000);
 
@@ -29,7 +29,6 @@ export default function Index() {
       <View style={styles.logoContainer}>
         <LogoSVG width={120} height={120} color="white" />
       </View>
-      <View style={styles.indicator} />
     </Animated.View>
   );
 }
@@ -50,12 +49,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  indicator: {
-    width: 134,
-    height: 5,
-    backgroundColor: 'white',
-    borderRadius: 2.5,
-    position: 'absolute',
-    bottom: 30,
-  }
+  // Custom indicator removed to avoid duplication with native iOS home indicator
 });

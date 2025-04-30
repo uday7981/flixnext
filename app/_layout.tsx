@@ -45,7 +45,14 @@ export default function RootLayout() {
         }}
       />
       <Stack.Screen
-        name="welcome"
+        name="onboarding"
+        options={{
+          gestureEnabled: false,
+          animation: 'fade'
+        }}
+      />
+      <Stack.Screen
+        name="auth"
         options={{
           gestureEnabled: false,
           animation: 'fade'

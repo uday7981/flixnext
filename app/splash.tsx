@@ -30,8 +30,8 @@ export default function SplashPage() {
   });
 
   const onAnimationComplete = () => {
-    // Navigate to the welcome screen after animation completes
-    router.replace('/welcome');
+    // Navigate to the onboarding screen after animation completes
+    router.replace('/onboarding');
   };
 
   useEffect(() => {
