@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { Svg, Path } from 'react-native-svg';
+import SimpleStockChart from './SimpleStockChart';
 
 type TimeframeOption = '1d' | '1w' | '1m' | '3m' | '6m' | '1y' | 'All';
 
@@ -17,14 +17,10 @@ const PortfolioChart = ({ isNegative = false }: PortfolioChartProps) => {
     <View style={styles.container}>
       {/* Chart */}
       <View style={styles.chartContainer}>
-        <Svg width="100%" height={200} viewBox="0 0 350 200" fill="none">
-          <Path 
-            d="M0 180L20 150L40 160L60 140L80 160L100 120L120 130L140 100L160 110L180 80L200 60L220 40L240 30L260 50L280 20L300 10L320 30L340 20L350 40" 
-            stroke={isNegative ? "#EF4444" : "#EF4444"} 
-            strokeWidth="3" 
-            fill="none" 
-          />
-        </Svg>
+        <SimpleStockChart 
+          timeRange={activeTimeframe} 
+          color={isNegative ? "#EF4444" : "#3B82F6"} 
+        />
       </View>
       
       {/* Timeframe selector */}
