@@ -27,7 +27,7 @@ export default function VerifyEmail() {
   
   // Start countdown timer
   useEffect(() => {
-    let interval: NodeJS.Timeout;
+    let interval: ReturnType<typeof setInterval>;
     
     if (isTimerRunning && timer > 0) {
       interval = setInterval(() => {
